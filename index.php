@@ -24,11 +24,12 @@ if (!empty($_POST)) {
 }
 ?>
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title></title>
 </head>
 <body>
 <h1 class="mt-2">Mail Bot</h1>
@@ -39,7 +40,7 @@ if (!empty($_POST)) {
         foreach ($server_output as $row) {
             echo '<div class="form-group">';
             echo '<input class="form-check-input" type="checkbox" name="' . $row->slack_id . '" id="' . $row->slack_id . '">';
-            echo '<label class="form-check-label" for="' . $row->slack_id . '">' . $row->name . '</label>';
+            echo '<label class="form-check-label">' . $row->name . '</label>';
             echo '</input>';
             echo '</div>';
         }

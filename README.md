@@ -1,6 +1,6 @@
 # Broskies Portal: Mail Bot
 
-Allow the secretary to send DM's to the brotherhood when they have mail
+Allow the secretary to send direct message's to the brotherhood when they have mail
 
 ## Permission Levels
   0. No Access
